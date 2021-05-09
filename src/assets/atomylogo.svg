@@ -1,17 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="50px" height="39px" viewBox="0 0 50 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
-    <title>Group</title>
-    <desc>Created with Sketch.</desc>
-    <g id="WiP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-90.000000, -38.000000)">
-            <g id="Group" transform="translate(90.000000, 38.000000)">
-                <polygon id="Rectangle" fill="#808282" points="3 14 25 26.5 47 14 40.855176 39 9.08421785 39"></polygon>
-                <polygon id="Triangle" fill-opacity="0.262838724" fill="#101A1A" points="25 8 40 39 10 39"></polygon>
-                <circle id="Oval" fill="#5E6363" cx="2" cy="9" r="2"></circle>
-                <circle id="Oval" fill="#5E6363" cx="25" cy="2" r="2"></circle>
-                <circle id="Oval" fill="#5E6363" cx="48" cy="9" r="2"></circle>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="40.000000pt" height="40.000000pt" viewBox="0 0 40.000000 40.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.16, written by Peter Selinger 2001-2019
+</metadata>
+<g transform="translate(0.000000,40.000000) scale(0.020000,-0.020000)"
+fill="#000000" stroke="none">
+<path d="M825 1826 c-302 -70 -530 -276 -627 -566 -31 -91 -32 -101 -32 -260
+0 -159 1 -168 32 -260 82 -246 269 -443 503 -530 182 -67 416 -67 598 0 218
+81 410 273 491 491 50 136 65 333 35 474 -63 295 -276 532 -565 627 -84 27
+-111 31 -235 34 -95 3 -159 -1 -200 -10z m90 -73 c-3 -10 -113 -300 -242 -645
+-130 -346 -239 -628 -242 -628 -3 0 -25 26 -49 58 -171 225 -201 539 -77 797
+96 201 288 357 506 415 96 25 113 25 104 3z m325 -20 c442 -145 657 -649 456
+-1067 -32 -66 -113 -185 -127 -186 -3 0 -106 269 -229 598 -123 328 -231 619
+-242 645 l-18 49 42 -7 c24 -4 77 -18 118 -32z m-222 -205 c6 -24 51 -154 100
+-290 l89 -248 -203 0 c-112 0 -204 4 -204 8 0 5 36 108 79 229 44 120 88 247
+97 281 10 34 21 62 24 62 4 0 12 -19 18 -42z m292 -830 c119 -320 108 -298
+143 -298 l32 0 -30 -25 c-49 -40 -185 -103 -269 -125 -108 -27 -264 -27 -372
+0 -84 22 -220 85 -269 125 l-30 25 30 0 c30 0 30 0 104 203 41 111 78 210 83
+220 8 15 31 17 267 17 l258 0 53 -142z"/>
+</g>
 </svg>
