@@ -1,5 +1,5 @@
-const SHOP_DATA = [
-    {
+const SHOP_DATA = {
+      beauty: {
       id: 1,
       title: 'Beauty',
       routeName: 'beauty',
@@ -76,7 +76,7 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+      living: {
       id: 2,
       title: 'Living',
       routeName: 'living',
@@ -153,7 +153,7 @@ const SHOP_DATA = [
           }
       ]
     },
-    {
+       food: {
       id: 3,
       title: 'Food',
       routeName: 'food',
@@ -230,10 +230,10 @@ const SHOP_DATA = [
         }
       ]
     },
-    {
+       personalcare: {
       id: 4,
       title: 'Personal Care',
-      routeName: 'perosnal care',
+      routeName: 'perosnalcare',
       items: [
         {
           id: 31,
@@ -307,10 +307,10 @@ const SHOP_DATA = [
           }
       ]
     },
-    {
+      healthcare: {
       id: 5,
       title: 'Health Care',
-      routeName: 'health care',
+      routeName: 'healthcare',
       items: [
         {
           id: 41,
@@ -381,9 +381,9 @@ const SHOP_DATA = [
             // imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
             imageUrl: "https://www.atomy.com:449/us/shopping/p_img/100/00186_2.png",
             price: 12
-        }
-    ]
-  }
-]
-
-export default SHOP_DATA;
+          }
+        ]
+      }
+    };
+    
+    export default SHOP_DATA;

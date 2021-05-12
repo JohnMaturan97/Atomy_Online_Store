@@ -1,64 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
+
+import { selectDirectorySections } from '../../redux/directory/directory.selectors';
+
 import MenuItem from '../menu-item/menu-item.component';
+
 import './directory.styles.scss';
 
+const Directory = ({ sections }) => (
+  <div className='directory-menu'>
+    {sections.map(({ id, ...otherSectionProps }) => (
+      <MenuItem key={id} {...otherSectionProps} />
+    ))}
+  </div>
+);
 
-class Directory extends React.Component {
+const mapStateToProps = createStructuredSelector({
+  sections: selectDirectorySections
+});
 
-    constructor() {
-        super();
-
-        this.state = {
-            sections: [
-                {
-                  title: 'Beauty',
-                  subtitle: 'Define Beauty. Define You.',
-                  imageUrl: 'https://images.unsplash.com/photo-1608979048467-6194dabc6a3d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-                  id: 1,
-                  linkUrl: 'beauty'
-                },
-                {
-                  title: 'Living',
-                  subtitle: 'All you need is Change',
-                  imageUrl: 'https://images.unsplash.com/photo-1571992579655-8134e2b8df0b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                  id: 2,
-                  linkUrl: ''
-                },
-                {
-                  title: 'Food',
-                  subtitle: 'You are what you eat',
-                  imageUrl: 'https://images.unsplash.com/photo-1474859569645-e0def92b02bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80',
-                  id: 3,
-                  linkUrl: ''
-                },
-                {
-                  title: 'Personal Care',
-                  subtitle: 'Get the glow',
-                  imageUrl: 'https://images.unsplash.com/photo-1577467013350-7c22a844e1a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1442&q=80',
-                  size: 'large',
-                  id: 4,
-                  linkUrl: ''
-                },
-                {
-                  title: 'Health Care',
-                  subtitle: 'Health is the real wealth',
-                  imageUrl: 'https://images.unsplash.com/photo-1597817109745-c418f4875230?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-                  size: 'large',
-                  id: 5,
-                  linkUrl: ''
-                }],
-        }
-    }
-    render() {
-      return (
-        <div className='directory-menu'>
-          {this.state.sections.map(({ id, ...otherSectionProps }) => (
-            <MenuItem key={id} {...otherSectionProps} />
-          ))}
-        </div>
-        );
-    }
-
-}
-
-export default Directory;
+export default connect(mapStateToProps)(Directory);
