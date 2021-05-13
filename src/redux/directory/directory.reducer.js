@@ -23,7 +23,7 @@ const INITIAL_STATE = {
     },
     {
       title: "Personal Care",
-      subtitle: "Get the glow",
+      subtitle: "Eat.Pray.Love",
       imageUrl: "https://images.unsplash.com/photo-1577467013350-7c22a844e1a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1442&q=80",
       size: "large",
       id: 4,
